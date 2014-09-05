@@ -648,3 +648,24 @@ input.accent[type=submit]:hover, button[type=submit]:hover {
 #orian-footer .social a:before {
   font-size: 24px;
 }
+
+.header-blog {
+    background-image: url("../img/header.jpg");
+}
+/*@media (min-width: 40.063em) {
+    .header-blog {
+        background-image: url("../img/headers/resources-bg.jpg");
+        background-position: 0% 100%;
+    }
+}*/
+
+.top-nav {
+  padding: 0 5%;
+  padding-top: 2em;
+  margin: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0));
+}
+
+.top-nav a:hover, .st-menu a:hover {
+  text-decoration: none !important;
+}
