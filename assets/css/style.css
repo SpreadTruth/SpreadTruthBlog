@@ -93,7 +93,7 @@ code {
 }
 
 a {
-  color: #ff4035;
+  color: #2980b9;
   text-decoration: none;
 }
 a:hover {
@@ -110,7 +110,7 @@ blockquote {
   display: block;
   padding: 10px 20px;
   margin-bottom: 20px;
-  border-left: solid 4px #ff4035;
+  border-left: solid 4px #2980b9;
 }
 blockquote > *:last-child {
   margin-bottom: 0;
@@ -176,7 +176,7 @@ input[type=checkbox] {
 }
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background: #ff4035;
+  background: #2980b9;
 }
 
 input[type=radio] {
@@ -333,7 +333,7 @@ input[type=submit] {
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  background-color: #ff4035;
+  background-color: #2980b9;
   color: #f9f9f9;
   text-decoration: none;
 }
@@ -341,14 +341,14 @@ input[type=submit]:hover {
 input.accent[type=button],
 input.accent[type=reset],
 input.accent[type=submit], button[type=submit] {
-  background-color: #ff4035;
+  background-color: #2980b9;
   color: #f9f9f9;
 }
 .button.accent:hover, button.accent:hover,
 input.accent[type=button]:hover,
 input.accent[type=reset]:hover,
 input.accent[type=submit]:hover, button[type=submit]:hover {
-  background-color: #ff1002;
+  background-color: #1b5586;
 }
 
 @font-face {
@@ -499,7 +499,7 @@ input.accent[type=submit]:hover, button[type=submit]:hover {
     left: -4px;
     right: -4px;
     height: 4px;
-    background: #ff4035;
+    background: #2980b9;
   }
   #orian-navigation .container .links a:hover:before {
     top: 0;
@@ -668,4 +668,8 @@ input.accent[type=submit]:hover, button[type=submit]:hover {
 
 .top-nav a:hover, .st-menu a:hover {
   text-decoration: none !important;
+}
+
+#main-selection {
+  padding-bottom: 0;
 }
