@@ -1,0 +1,21 @@
+{{#post.author}}
+  {{#if name}}
+    <section id="orian-author">
+      <div class="container">
+        <div class="title">
+          {{#if image}}
+            <span class="image rounded"><span><img src="{{image}}" /></span></span>
+          {{else}}
+            <h3>About the author</h3>
+          {{/if}}
+        </div>
+        <div class="information">
+          <h3>{{name}}</h3>
+          {{#if location}}<p>{{location}}</p>{{/if}}
+          {{#if bio}}<p>{{bio}}</p>{{/if}}
+          {{#if website}}<p><a href="{{website}}">{{website}}</a></p>{{/if}}
+        </div>
+      </div>
+    </section>
+  {{/if}}
+{{/post.author}}

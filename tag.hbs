@@ -1,0 +1,25 @@
+{{!< default}}
+{{> header}}
+
+{{! The main content area on the homepage }}
+<section id="orian-content" role="main">
+  <div class="container container-large">
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+      <article class="orian-post-preview {{post_class}}">
+        <a href="{{url}}" title="View post">
+          <div class="post-image hidden">{{content words="0"}}</div>
+
+          <span class="post-content{{#if featured}} icon-star{{/if}}"><span>
+            <h3 class="title">{{title}}</h3>
+            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+          </span></span>
+        </a>
+      </article>
+    {{/foreach}}
+
+  </div>
+
+  {{pagination}}
+</section>

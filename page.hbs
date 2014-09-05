@@ -1,0 +1,33 @@
+{{!< default}}
+{{> header}}
+
+<section id="orian-content" role="main">
+  <div class="container">
+
+    <article class="orian-post-detail {{post_class}}">
+      {{#post}}
+        <h1 class="post-title">{{title}}</h1>
+
+        <div class="post-meta">
+          <div>
+            <time datetime="{{date format='YYYY-MM-DD'}}">
+              <span class="day">Posted on {{date format="D"}}</span>
+              <span class="month">{{date format="MMMM"}}</span>
+            </time>
+          </div>
+          <div>
+            {{#if tags}}<p class="tags"> in {{tags}}</p>{{/if}}
+          </div>
+          <div>
+            <span class="eta"></span> to read (<span class="word-count"></span> words)
+          </div>
+        </div>
+
+        <div class="post-content">
+          {{content}}
+        </div>
+      {{/post}}
+    </article>
+
+  </div>
+</section>
