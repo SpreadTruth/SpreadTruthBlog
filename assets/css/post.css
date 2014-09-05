@@ -58,7 +58,7 @@
   -o-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-  opacity: 0.1;
+  opacity: 0.3;
   background-size: cover;
   background-position: center center;
   display: inline-block;

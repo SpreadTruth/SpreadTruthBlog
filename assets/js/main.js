@@ -3,7 +3,7 @@
     var _window = $(window);
     var body = $('body');
     var navigation = $('#orian-navigation');
-    var header = $('#orian-header');
+    var header = $('#feature-header');
 
     _window.on('resize orientationchange', function() {
       header.css({
@@ -31,7 +31,7 @@
       }
 
       header.find('h1').text(title);
-      header.find('h3').hide();
+      header.find('.hero-subheader').hide();
 
       $('article').readingTime({
         readingTimeTarget: '.eta',
@@ -55,24 +55,10 @@
       });
     }
 
-    if (skrollr && header.css('background').indexOf('url') > 0) {
-      var h1 = header.find('h1');
-
-      h1.attr('data-0', 'filter:blur(0px);opacity:1;');
-      h1.attr('data-500', 'filter:blur(3px);opacity:0;');
-
-      skrollr.init({
-        mobileCheck: function() { return false; }
-      });
-    }
-
     if ($.fn.fitVids) {
       $("#orian-content").fitVids();
     }
 
-    if (hljs) {
-      hljs.initHighlightingOnLoad();
-    }
   });
 
 })(jQuery);
