@@ -3,7 +3,7 @@
     var _window = $(window);
     var body = $('body');
     var navigation = $('#orian-navigation');
-    var header = $('#feature-header');
+    var header = $('#blog-header');
 
     _window.on('resize orientationchange', function() {
       header.css({
