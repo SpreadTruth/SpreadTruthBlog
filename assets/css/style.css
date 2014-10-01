@@ -116,7 +116,7 @@ blockquote > *:last-child {
   margin-bottom: 0;
 }
 
-label {
+/*label {
   width: 200px;
   float: left;
   color: #727272;
@@ -207,7 +207,7 @@ input[type=submit] {
   border: none;
   width: auto;
   margin: 5px 0;
-}
+}*/
 
 #orian-content .hljs {
   background: white;

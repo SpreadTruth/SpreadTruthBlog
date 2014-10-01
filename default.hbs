@@ -101,6 +101,22 @@
               <div class="columns medium-10 large-7 small-centered medium-center large-uncentered">
                 <form id="newsletter" class="newsletter">
                   <input class="small-center" type="email" name="email" placeholder="Your email address" required /><button id="subscribe-btn" class="btn btn-dark">SIGN UP</button>
+                  <div class="newsletter-checkboxes">
+                    <div class="newsletter-checkboxes-form-group">
+                      <div class="squaredThree">
+                        <input type="checkbox" value="None" id="blog-updates" name="blog" checked />
+                        <label for="blog-updates"></label>
+                      </div>
+                      <span style="margin-left: 0.5em;">Blog</span>
+                    </div>
+                    <div class="newsletter-checkboxes-form-group">
+                      <div class="squaredThree">
+                        <input type="checkbox" value="None" id="st-updates" name="updates" checked />
+                        <label for="st-updates"></label>
+                      </div>
+                      <span style="margin-left: 0.5em;">Updates</span>
+                    </div>
+                  </div>
                 </form>
               </div>
               <div class="columns medium-10 large-5 small-centered medium-center large-uncentered">
@@ -157,7 +173,7 @@
   <script async type="text/javascript" rel="javascript" src="{{asset "js/main.js"}}"></script>
 
   <!-- Load Libraries -->
-  <script src="http://www.spreadtruth.com/js/main.min.js?v1.2" type="text/javascript"></script>
+  <script src="http://www.spreadtruth.com/js/main.min.js?v1.3" type="text/javascript"></script>
 
   <script>
     Foundation.set_namespace = function() {};
