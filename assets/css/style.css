@@ -683,6 +683,15 @@ input.accent[type=submit]:hover, button[type=submit]:hover {
 .orian-post-preview h3 {color: #fff;}
 
 h1.header-shadow {
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-filter: dropshadow(color=#444444, offx=0, offy=0);
+  display: none;
 }
+
+@media (min-width: 40.063em) {
+    h1.header-shadow {
+        display: block;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        filter: dropshadow(color=#444444, offx=0, offy=0);
+    }
+}
+
+.header-blog {background-position: center;}
