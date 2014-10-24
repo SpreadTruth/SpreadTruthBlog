@@ -695,3 +695,7 @@ h1.header-shadow {
 }
 
 .header-blog {background-position: center;}
+
+.social{
+  border-top: solid 1px #aeaeae;
+}
