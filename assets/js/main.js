@@ -30,7 +30,7 @@
         });
       }
 
-      header.find('h1').text(title).addClass('header-shadow');
+      header.find('h1').text(title).addClass('header-shadow').hide();
       header.find('.hero-subheader').hide();
 
       $('article').readingTime({
